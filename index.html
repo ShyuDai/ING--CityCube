@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index-begin.css">
+    <link rel="stylesheet" type="text/css" href="css/dog.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+<div class="stat">
+    <!-- 魔方 -->
+    <div class="scene">
+      <div class="cube rotating">
+        <div class="cube-face front">广告</div>
+        <div class="cube-face inner-faces inner-face"></div>
+        <div class="cube-face inner-faces inner-face2"></div>
+        <div class="cube-face inner-faces inner-face3"></div>
+        <div class="cube-face back">公交</div>
+        <div class="cube-face left">地图</div>
+        <div class="cube-face right">美味</div>
+        <div class="cube-face top">招租</div>
+        <div class="cube-face bottom">景点</div>
+      </div>
+    </div>
+    <!-- 城市魔方文字 -->
+    <div class="news">
+        <p class="news-p">城市魔方</p>
+        <br>
+        <br>
+    </div>
+    <!-- 开始按钮 -->
+    <div class="search">
+        <input type="text" placeholder="请输入您想查看的城市">       
+        <input type="submit"  value="Search" >
+    </div>
+    <div class="button-div">
+      <button id="btn">L e t ' s&nbsp;&nbsp;&nbsp;G o</button>
+    </div>
+</div>
+
+<div class="dog" style="display: none;">
+        <div class="pop"><span>点击查看更多城市风采</span></div>
+
+        <div class="forhead center"></div>
+        <div class="face center"></div>
+        <div class="chin center"></div>
+        <div class="ear"></div>
+        <div class="ear right"></div>
+        <div class="birthmark"></div>
+        <div class="eye">
+            <div class="pupil"></div>
+        </div>
+        <div class="eye right">
+            <div class="pupil"></div>
+        </div>
+        <div class="nose center">
+            <div class="nostril"></div>
+            <div class="nostril right"></div>
+        </div>
+        <div class="mouth center">
+            <div class="teen"></div>
+            <div class="teen right"></div>
+            <div class="tongue center"></div>
+        </div>
+        <div class="body center">
+            <div class="arm"></div>
+            <div class="arm right"></div>
+            <div class="leg">
+                <div class="foot"></div>
+            </div>
+            <div class="leg right">
+                <div class="foot"></div>
+            </div>
+            <div class="belly center"></div>
+        </div>
+</div>
+
+<!-- .content>.-caption>a.caption-item{中南}+a.caption-item{华北}+a.caption-item{华东}+a.caption-item{东北}+a.caption-item{西南}+a.caption-item{西北}+a.caption-item{港澳台}^.-block>.block-caption>(.block-caption-city$>(a.block-item)*5)*7^.block-list>(.block-list-main$>img+.block-list-main-name+.block-list-main-news)*3|bem -->
+<div class="content">
+	<div class="content__caption">
+		<a href="#121" class="caption-item region1">中南</a>
+		<a href="#122" class="caption-item caption-focus region2">华北</a>
+		<a href="#123" class="caption-item region3">华东</a>
+		<a href="#124" class="caption-item region4">东北</a>
+		<a href="#125" class="caption-item region5">西南</a>
+		<a href="#126" class="caption-item region6">西北</a>
+		<a href="#127" class="caption-item region7">港澳台</a>
+	</div>
+	<div class="content__block">
+		<div class="block-caption">
+			<div class="block-caption-city city1">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">河南</a>
+				<a href="#123" class="block-item">湖北</a>
+				<a href="#123" class="block-item">湖南</a>
+				<a href="#123" class="block-item">广东</a>
+				<a href="#123" class="block-item">广西</a>
+				<a href="#123" class="block-item">海南</a>
+			</div>
+			<div class="block-caption-city city2 city-show">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">北京</a>
+				<a href="#123" class="block-item">天津</a>
+				<a href="#123" class="block-item">河北</a>
+				<a href="#123" class="block-item">山西</a>
+				<a href="#123" class="block-item">内蒙古</a>
+			</div>
+			<div class="block-caption-city city3">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">上海</a>
+				<a href="#123" class="block-item">江苏</a>
+				<a href="#123" class="block-item">浙江</a>
+				<a href="#123" class="block-item">安徽</a>
+				<a href="#123" class="block-item">福建</a>
+				<a href="#123" class="block-item">江西</a>
+				<a href="#123" class="block-item">山东</a>
+			</div>
+			<div class="block-caption-city city4">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">辽宁</a>
+				<a href="#123" class="block-item">吉林</a>
+				<a href="#123" class="block-item">黑龙江</a>
+			</div>
+			<div class="block-caption-city city5">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">重庆</a>
+				<a href="#123" class="block-item">四川</a>
+				<a href="#123" class="block-item">贵州</a>
+				<a href="#123" class="block-item">云南</a>
+				<a href="#123" class="block-item">西藏</a>
+			</div>
+			<div class="block-caption-city city6">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">陕西</a>
+				<a href="#123" class="block-item">甘肃</a>
+				<a href="#123" class="block-item">青海</a>
+				<a href="#123" class="block-item">宁夏</a>
+				<a href="#123" class="block-item">新疆</a>
+			</div>
+			<div class="block-caption-city city7">
+				<a href="#123" class="block-item block-focus permanent-focus">全部</a>
+				<a href="#123" class="block-item">台湾</a>
+				<a href="#123" class="block-item">香港</a>
+				<a href="#123" class="block-item">澳门</a>
+			</div>
+		</div>
+		<div class="block-logo">
+			<div class="logo">
+		        <!-- 魔方 -->
+		        <div class="scene">
+		          <div class="cube rotating">
+		            <div class="block-cube-face front">旅游</div>
+		            <div class="block-cube-face inner-faces inner-face"></div>
+		            <div class="block-cube-face inner-faces inner-face2"></div>
+		            <div class="block-cube-face inner-faces inner-face3"></div>
+		            <div class="block-cube-face back">广告</div>
+		            <div class="block-cube-face left">创意</div>
+		            <div class="block-cube-face right">地图</div>
+		            <div class="block-cube-face top">美味</div>
+		            <div class="block-cube-face bottom">景点</div>
+		          </div>
+		        </div>
+		        <!-- 城市魔方文字 -->
+		        <div class="block-news">
+		            城市魔方带您纵享城市风采
+		        </div>
+		    </div>
+		</div>
+		<div class="block-list">
+			<div class="town town1">
+				<!-- .block-list-main>img+.block-list-main-name+.block-list-main-news+span.share+span.thumbs+span.collect -->
+				<div class="block-list-main">
+					<img src="imgs/city/LuoYang.jpg" alt="">
+					<div class="block-list-main-name">洛阳</div>
+					<div class="block-list-main-news">洛阳，古称斟鄩、西亳、洛邑、雒阳、洛京、京洛、神都、洛城等，位于河南省西部、黄河中下游，因地处洛河之阳而得名，是国务院首批公布的国家历史文化名城，中国四大古都之一，世界文化名城。
+					洛阳有着5000多年的文明史、4000多年的建城史和1500多年的建都史，夏朝、商朝、西周、东周、东汉、曹魏、西晋、北魏、隋朝、唐朝、武周、后梁、后唐、后晋等十三个王朝在洛阳建都，有十三朝古都之称，有全国重点文物保护单位43处，馆藏文物40余万件。
+					洛阳是华夏文明和中华民族的发源地之一，是东汉、曹魏、西晋、北魏及隋唐时期丝绸之路的东方起点，隋唐大运河的中心枢纽。牡丹因洛阳而闻名于世，有“洛阳牡丹甲天下”之称，被誉为“千年帝都，牡丹花城”，中国洛阳牡丹文化节蜚声中外。
+					截至2015年，洛阳拥有四项世界文化遗产，沿洛河两岸存有夏都二里头遗址、偃师商城遗址、西周成周城遗址、东周王城遗址、汉魏洛阳城遗址、隋唐洛阳城遗址等六大都城遗址。 有5A级景区5家、4A级景区16家。
+					2016年12月29日，国家发展改革委公布《国家发展改革委关于印发中原城市群发展规划的通知》，该《规划》将洛阳定位为中原城市群副中心城市。洛阳自贸区也是中国（河南）自由贸易试验区的三大片区之一。 
+					2017年，洛阳市复查确认继续保留全国文明城市荣誉称号。</div>
+					<span class="share"></span>
+					<span class="thumbs"></span>
+					<span class="collect"></span>
+					<span class="more"></span>
+				</div>
+				<div class="block-list-main">
+					<img src="imgs/city/TianJing.jpg" alt="">
+					<div class="block-list-main-name">天津</div>
+					<div class="block-list-main-news">天津，简称津，中华人民共和国直辖市、国家中心城市、超大城市、环渤海地区经济中心、首批沿海开放城市，全国先进制造研发基地、北方国际航运核心区、金融创新运营示范区、改革开放先行区。 [1-2] 
+					天津自古因漕运而兴起，明永乐二年十一月二十一日（1404年12月23日）正式筑城，是中国古代唯一有确切建城时间记录的城市。历经600多年，造就了天津中西合璧、古今兼容的独特城市风貌。
+					天津位于华北平原海河五大支流汇流处，东临渤海，北依燕山，海河在城中蜿蜒而过，海河是天津的母亲河。天津滨海新区被誉为“中国经济第三增长极”。天津是夏季达沃斯论坛常驻举办城市。
+					2014年12月12日，位于天津市滨海新区的中国（天津）自由贸易试验区正式获得国家批准设立。2015年4月21日，中国(天津)自由贸易试验区正式挂牌。中国（天津）自由贸易试验区为中国北方第一个自贸区。 [3] 
+					截至2017年末，天津市常住人口1556.87万人，社会消费品零售总额5729.67亿元，人均可支配收入37022元，高新技术企业达4093家。 [4]  2017年中国百强城市排行榜排第5位。 [5-6] 
+					</div>
+					<span class="share"></span>
+					<span class="thumbs"></span>
+					<span class="collect"></span>
+					<span class="more"></span>
+				</div>
+				<div class="block-list-main">
+					<img src="imgs/city/BeiJing.jpg" alt="">
+					<div class="block-list-main-name">北京</div>
+					<div class="block-list-main-news">北京，简称“京”，是中华人民共和国的首都、直辖市、国家中心城市、超大城市、国际大都市，全国政治中心、文化中心、国际交往中心、科技创新中心，是中国共产党中央委员会、中华人民共和国中央人民政府、全国人民代表大会、中国人民政治协商会议全国委员会、中华人民共和国中央军事委员会所在地，也是中部战区司令部驻地。
+					北京位于华北平原北部，背靠燕山，毗邻天津市和河北省。北京的气候为典型的北温带半湿润大陆性季风气候。
+					北京是首批国家历史文化名城和世界上拥有世界文化遗产数最多的城市，三千多年的历史孕育了故宫、天坛、八达岭长城、颐和园等众多名胜古迹。早在七十万年前，北京周口店地区就出现了原始人群部落“北京人”。公元前1045年，北京成为蓟、燕等诸侯国的都城。公元938年以来，北京先后成为辽陪都、金中都、元大都、明、清国都、中华民国北洋政府首都 [1]  ，1949年10月1日成为中华人民共和国首都。
+					北京被全球权威机构GaWC评为世界一线城市 [2]  。联合国报告指出，北京人类发展指数居中国城市第二位 [3]  。2017年，北京市人均可支配收入达到57230元 [4]  ，住户存款总额和人均住户存款 均居全国第一 [5]  。2017年，北京高新技术企业达到20183家，数量居全国第一 [6]  。 [7]  北京在福布斯2017年“中国大陆最佳商业城市排行榜”排第3位。 [8] 
+					2015年7月31日，国际奥委会主席巴赫宣布北京携手张家口获得2022年冬季奥林匹克运动会的举办权。北京由此成为全球首个既举办过夏季奥运会又将举办冬季奥运会的城市。
+					</div>
+					<span class="share"></span>
+					<span class="thumbs"></span>
+					<span class="collect"></span>
+					<span class="more"></span>
+				</div>
+				
+				<div class="block-list-main">
+					<img src="imgs/city/shijiazhuang.jpg" alt="">
+					<div class="block-list-main-name">石家庄</div>
+					<div class="block-list-main-news">
+						石家庄，简称“石”，河北省省会，地处河北省西南部，旧称石门。截至2016年底，石家庄辖区总面积15848平方公里，市区面积2206平方公里，全市常住人口1078.46万人，下辖8个区、11个县，代管3个县级市。 [1] 
+						石家庄地处河北省中南部，环渤海湾经济区。东与衡水接壤，南与邢台毗连，西与山西为邻，北与保定交界，距首都北京273公里。京石、石太、石黄、石安高速公路和107、207、307、308国道以及2条省道、42条县道在石家庄市域纵横交错。石家庄是中国铁路运输的主要枢纽，京广、石太、石德、朔黄四条铁路干线交汇于此。 [2-3] 
+						石家庄跨华北平原和太行山地两大地貌单元，是全国粮、菜、肉、蛋、果主产区之一，农业集约化和产业化水平较高，生产规模位居全国36个重点城市第一位，被国家确定为优质小麦生产基地，素有“北方粮仓”之称。 [4] 
+						因毛泽东主席在石家庄市平山县西柏坡指挥的三大战役，又被誉为“新中国的摇篮”。 [5]  2016年2月23日，石家庄在CCTV“中国经济生活大调查”2015年度十大最具幸福感省会城市中名列第八。 [6]  2017年10月24日石家庄市第十四届人大常委会第六次会议通过，决定自2017年起，将每年11月12日设立为石家庄解放纪念日。2017年石家庄入选全国文明城市。
+					</div>
+					<span class="share"></span>
+					<span class="thumbs"></span>
+					<span class="collect"></span>
+					<span class="more"></span>
+				</div>
+
+				<div class="block-list-main">
+					<img src="imgs/city/xinji.jpg" alt="">
+					<div class="block-list-main-name">辛集市</div>
+					<div class="block-list-main-news">辛集，省直管市，是河北省中东部地区区域中心城市，位于石家庄市东65公里处，距首都北京220公里，距天津220公里，距雄安新区120公里。辛集市北与深泽县、安平县接壤，东与深州市为邻，南与冀州区、宁晋县相接，西与晋州市毗连。全市总面积951平方公里，总人口63万，城区人口31万人（2017年）。 [1]  是国务院批准的对外开放市，是全国卫生城、文化先进市、体育先进市。
+					辛集市是河北省第一批22个扩权强县（市）的县市之一，是全国百家明星县（市）之一，综合经济实力居河北省“十强”县市，2011年5月，被河北省文明办评为文明城区、文明县级市，发展最快的城市，全省排第21位，辛集镇被誉为“河北省第一大镇”。
+					2017年10月，被授予国家园林城市。 [2] 
+					2017年12月，“中国最佳运动休闲旅游城市”。 [3-5] 
+					</div>
+					<span class="share"></span>
+					<span class="thumbs"></span>
+					<span class="collect"></span>
+					<span class="more"></span>
+				</div>
+			</div>
+			<!-- 分页 -->
+			<ul class="pagination modal-3">
+			<li><a href="#223" class="prev">&laquo</a></li>
+			<li class="active"><a href="#2323">1</a></li>
+			<li> <a href="#2323">2</a></li>
+			<li> <a href="#2323">3</a></li>
+			<li> <a href="#2323">4</a></li>
+			<li> <a href="#2323">5</a></li>
+			<li> <a href="#2323">6</a></li>
+			<li> <a href="#2323">7</a></li>
+			<li> <a href="#2323">8</a></li>
+			<li> <a href="#2323">9</a></li>
+			<li><a href="#2323" class="next">&raquo;</a></li>
+			</ul>
+			<!-- <ul class="pagination modal-1">
+				<li><a href="#232323" class="prev">&laquo</a></li>
+				<li><a href="#232323" class="active">1</a></li>
+				<li> <a href="#232323">2</a></li>
+				<li> <a href="#232323">3</a></li>
+				<li> <a href="#232323">4</a></li>
+				<li> <a href="#232323">5</a></li>
+				<li> <a href="#232323">6</a></li>
+				<li> <a href="#232323">7</a></li>
+				<li> <a href="#232323">8</a></li>
+				<li> <a href="#232323">9</a></li>
+				<li><a href="#232323" class="next">&raquo;</a></li>
+			</ul> -->
+		</div>
+	</div>
+</div>
+
+<!-- <div class="goback">
+	<span class="backTop"></span>
+<span class="backNews">反馈</span>
+</div> -->
+<!-- 左侧楼层 -->
+<div class="leftF">
+		<div class="leftFloor">
+			<div class="leftFloorD2 i1"></div>
+			<div class="leftFloorD1 r1">用户</div>			
+		</div>
+		<div class="leftFloor">
+			<div class="leftFloorD2 i2"></div>
+			<div class="leftFloorD1 r2">我的收藏</div>			
+		</div>
+		<div class="leftFloor">
+			<div class="leftFloorD2 i3"></div>
+			<div class="leftFloorD1 r3">我的消息</div>			
+		</div>
+		<div class="leftFloor">
+			<div class="leftFloorD2 i4"></div>
+			<div class="leftFloorD1 r4">反馈意见</div>			
+		</div>
+		<div class="leftFloor">
+			<div class="leftFloorD2 i5"></div>
+			<div class="leftFloorD1 r5">返回顶部</div>			
+		</div>
+</div>
+
+<!-- 每日推荐 -->
+<div class="dayup">
+	<div class="dayup-tittle">
+		<span></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日推荐
+	</div>
+	<div class="container">
+	  <div class="dayup-name">长&nbsp;&nbsp;沙</div>
+	  美食
+	  <div class="skill-level show-1">
+	    <div class="dayup-icon dayup-icon1"></div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+	  </div>
+	  景点
+	  <div class="skill-level show-2">
+	    <div class="dayup-icon dayup-icon2"></div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+	  </div>
+	  文化
+	  <div class="skill-level show-3">
+	    <div class="dayup-icon dayup-icon3"></div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+	  </div>
+	  民风
+	  <div class="skill-level show-4">
+	    <div class="dayup-icon dayup-icon4"></div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+	  </div>
+	  <!-- 综合指数
+	  <div class="skill-level show-5">
+	    <div class="dayup-icon dayup-icon5"></div><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+	  </div> -->
+	  <div class="dayup-pic">
+	  	
+	  </div>
+	</div>
+</div>
+
+<!-- 点赞排行榜 -->
+<div class="upList">
+	<div class="upList__tittle">
+		<span></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点赞排行榜
+	</div>
+	<div class="upList__search">
+		<input type="text" placeholder="Search..."></input>
+	</div>
+	<div class="upList__main">
+		<div class="upList__main-tittle">
+			<span class="upList__main-tittle-city"></span>
+			<span class="upList__main-tittle-math"></span>
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">洛阳</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">32145</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">南京</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">31123</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">北京</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">25645</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">上海</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">23145</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">重庆</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">22113</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">成都</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">18343</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">达州</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">17232</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">郑州</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">16999</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">湖南</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">13453</span>			
+		</div>
+		<div class="upList__main-news">
+			<span class="upList__main-news-name">开封</span>
+			<span class="upList__main-news-icon"></span>
+			<span class="upList__main-news-math">12089</span>			
+		</div>
+	</div>
+</div>
+
+
+<!-- 弹出层遮罩 -->
+	<div id="layer-mask" class="layer-mask"></div>
+	<!-- 弹出层窗体 -->
+	<div id="layer-pop" class="layer-pop">
+		<!-- 弹出层关闭按钮 -->
+		<!-- 弹出层内容区域 -->
+		<div class="layer-content" id="layer-content">
+			<div id="layer-close" class="layer-close">
+				<img src="imgs/index-stat/20.png">
+			</div>
+			<!-- 登录、注册窗体 -->
+			<!-- 登录 -->
+			<div id="loginHtml">
+				<div class="login">
+					<div class="titleLogin">
+						<span id="loginLink1" class="titleLoginBor">登录</span>
+						<span id="regeLink">注册</span>
+					</div>
+					<div class="item username">
+						<input id="username" class="input" name="username" placeholder="请输入登录邮箱/手机号" style="font-size: 14px;padding-left: 5px;" type="text"/>
+						<p class="error-msg"></p>
+					</div>
+					<div class="item password">
+						<input id="password" class="input" name="password" placeholder="6-16位密码,区分大小写，不能使用空格" style="font-size: 14px;padding-left: 5px; " type="password"/>
+						<p class="error-msg2"></p>
+					</div>
+					<div class="item remFor">
+					<span id="rem"><input type="checkbox" checked="checked">下次自动登录</span>
+					<span id="for">忘记密码</span>
+					</div>
+					<div class="item loginSubmitBtn">
+						<input id="loginSubmitBtn" type="submit" class="submit" value="登录"/>
+					</div>
+					<div class="item item-pic">
+						<span><img src="imgs/index-stat/QQ.png"></span>
+						<span><img src="imgs/index-stat/weixin.png"></span>
+						<span><img src="imgs/index-stat/xinlang.png"></span>
+					</div>
+				</div>
+			</div>
+			<!-- 注册 -->
+			<div id="regeHtml" style="display: none;">
+				<div class="login">
+					<div class="titleLogin">
+						<span id="loginLink2">登录</span>
+						<span id="regeLink" class="titleLoginBor">注册</span>
+					</div>
+					<div class="item username">
+						<input id="username2" class="input" name="username2" placeholder="请输入注册邮箱/手机号" style="font-size: 14px;padding-left: 5px;" type="text"/>
+						<p class="error-msg3"></p>
+					</div>
+					<div class="item yanzheng">
+						<input id="yanzheng" class="input" name="yanzheng" placeholder="请输入验证码" style="font-size: 14px;padding-left: 5px; " type="password"/>
+						<p class="error-msg4"></p>
+						<div class="yzm"><img src="imgs/index-stat/verify.png"></div>
+					</div>
+					<div class="item loginSubmitBtn">
+						<input id="regeSubmitBtn" type="submit" class="submit" value="注册"/>
+					</div>
+					<div class="item item-pic">
+						<span><img src="imgs/index-stat//QQ.png"></span>
+						<span><img src="imgs/index-stat//weixin.png"></span>
+						<span><img src="imgs/index-stat//xinlang.png"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 注册窗体 -->
+	<div id="regeHtml" style="display:none;">
+		<!-- 注册窗体 -->
+		<div class="login">
+			<h4 class="title">注 册</h4>
+			<div class="item">
+				<label>账号</label>
+				<input id="username" class="input" name="username" type="text"/>
+				<p class="error-msg"></p>
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input id="password" class="input" name="password" type="password"/>
+			</div>
+			<div class="item">
+				<label>重复密码</label>
+				<input id="repassword" class="input" name="repassword" type="password"/>
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input id="regeSubmitBtn" type="submit" class="submit" value="填写好了"/>
+			</div>
+		</div>
+	</div>
+
+
+<div class="footer">
+	© 2018 Dai's Graduation design All Rights Reserved
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="js/index-begin.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</body>
+</html>

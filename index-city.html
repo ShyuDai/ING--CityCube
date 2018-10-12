@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>city</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/index-city.css">
+</head>
+<body>
+<!-- header>.logo+.items>a.-item{华南}+a.-item.-active{华北}+a.-item{华中}+a.-item{华东}+a.-item{东北}+a.-item{西南}+a.-item{西北}^.icons>a.-head+a.-icon1+a.-icon2^.search>input+a.-text+a.-icon|bem -->
+<header>
+    <div class="logo">
+        <!-- 魔方 -->
+        <div class="scene">
+          <div class="cube rotating">
+            <div class="cube-face front">旅游</div>
+            <div class="cube-face inner-faces inner-face"></div>
+            <div class="cube-face inner-faces inner-face2"></div>
+            <div class="cube-face inner-faces inner-face3"></div>
+            <div class="cube-face back">广告</div>
+            <div class="cube-face left">公交</div>
+            <div class="cube-face right">地图</div>
+            <div class="cube-face top">美味</div>
+            <div class="cube-face bottom">景点</div>
+          </div>
+        </div>
+        <!-- 城市魔方文字 -->
+        <div class="news">
+            城市魔方
+        </div>
+    </div>
+    <div class="items">
+        <a href="#1" class="items__item items__active">广告</a>
+        <a href="#2" class="items__item">公交</a>
+        <a href="#3" class="items__item">地图</a>
+        <a href="#4" class="items__item">美食</a>
+        <a href="#5" class="items__item">景点</a>
+        <a href="#6" class="items__item">旅游指南</a>
+        <a href="#7" class="items__item">招租</a>
+    </div>
+    <div class="icons">
+        <a href="#8" class="icons__head"></a>
+        <a href="" class="icons__icon1"><span class="glyphicon glyphicon-heart"></span></a>
+        <a href="" class="icons__icon2"><span class="glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div class="search">
+        <input type="text" class="inpu1">
+        <a href="" class="search__text"></a>
+        <a href="" class="search__icon"></a>
+    </div>
+</header>
+
+<div class="tags">
+	<div class="tag-ad tag-active">广告</div>
+	<div class="tag-transit">公交</div>
+	<div class="tag-map">地图</div>
+	<div class="tag-food">美食</div>
+	<div class="tag-spot">景点</div>
+	<div class="tag-special">旅游指南</div>
+	<div class="tag-rent">招租</div>
+	<div class="tag-app">APP下载</div>
+</div>
+<div class="content-box">
+	<div class="box-ad">广告</div>
+
+	<div class="box-transit">公交
+		<div class="transit-search">
+			<input type="text" placeholder="请输入线路" class="transit-in1">
+			<p class="transit-p1">例如:洛阳101路公交路线</p>
+
+			<input type="text" placeholder="请输入站点" class="transit-in2">			
+			<p class="transit-p2">例如:王城大道泉舜购物广场站</p>
+
+			<input type="text" placeholder="请输入起点" class="transit-in3">
+			<span class="transit-sp34"></span>
+			<input type="text" placeholder="请输入终点" class="transit-in4">
+			<p class="transit-p3">例如：老城夹马营路口到高新开发区</p>
+
+			<span>
+				<img src="imgs/index-city/搜索.png" alt="">
+			</span>	
+
+			<div class="transfer tr-active">线路查询</div>
+			<div class="line">站点查询</div>
+			<div class="site">换乘查询</div>		
+		</div>
+
+		
+
+		<div class="transit-right">
+			<div class="transit-right_list">
+				<div class="transit-right_list_tit">12路<span class="transit-right_list_tit_s1">分享</span></div>
+				<div class="transit-right_list_bus">
+					廊坊北站东广场→大学城第八食堂站
+					<span class="transit-right_list_bus_s1">[35站]</span>
+					<br>
+					<span class="transit-right_list_bus_s2">返程</span>
+				</div>
+				<div class="transit-right_list_li">
+					<ul class="transit-right_list_li_u1">
+						<li>
+							<a href="">
+								<em>1.</em>
+								<span>廊坊北站东广场</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>2.</em>
+								<span>东安市场站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>3.</em>
+								<span>广阳第二幼儿园站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>4.</em>
+								<span>管道局中学站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>5.</em>
+								<span>管道局医院站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>6.</em>
+								<span>花卉市场站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>7.</em>
+								<span>朝阳市场站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>8.</em>
+								<span>康乐小区站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>9.</em>
+								<span>吉祥小区站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>10.</em>
+								<span>是检验检疫局站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>11.</em>
+								<span>市邮政局站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>12.</em>
+								<span>第九中学站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>13.</em>
+								<span>户屯站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>14.</em>
+								<span>金泰小区站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>15.</em>
+								<span>金泰小区北门站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>16.</em>
+								<span>阳光佳和站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>17.</em>
+								<span>阳光佳和东门站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>18.</em>
+								<span>小长亭站</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="transit-right_list_li_u2">
+						<li>
+							<a href="">
+								<em>19.</em>
+								<span>大长亭站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>20.</em>
+								<span>田园新区西门站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>21.</em>
+								<span>会展中心站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>22.</em>
+								<span>开发区法院站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>23.</em>
+								<span>邮政培训中心站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>24.</em>
+								<span>利仁电器站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>25.</em>
+								<span>开发区汽车站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>26.</em>
+								<span>航天华创站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>27.</em>
+								<span>大学城公安分局站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>28.</em>
+								<span>东方大学城门站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>29.</em>
+								<span>一期公寓站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>30.</em>
+								<span>美食街站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>31.</em>
+								<span>活动中心站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>32.</em>
+								<span>凤凰会馆站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>33.</em>
+								<span>高尔夫球场站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>34.</em>
+								<span>二期体育场站</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<em>35.</em>
+								<span>大学城第八食堂站</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="transit-right_list_news">
+					<span>票制:</span>单一票制无人售票;&nbsp;&nbsp;&nbsp;&nbsp;
+					<!-- <br> -->
+					<span>全程票价(元):</span>2.00/8(折);
+					<br>
+					<span>起点站首末车时间:</span>06:00-21:00(夏)06:30-20:00(冬);
+					<br>
+					<span>终点站首末车时间:</span>06:00-21:00(夏)06:30-20:00(冬);
+					<br>
+					<span>发车间隔:</span>11-30分钟;&nbsp;&nbsp;&nbsp;&nbsp;
+					<!-- <br> -->
+					<span>高峰发车间隔:</span>11-13分钟;
+					<br>
+					<span>是否空调车:</span>空调;&nbsp;&nbsp;&nbsp;&nbsp;
+					<!-- <br> -->
+					<span>月票是否有效:</span>有效/IC卡打折;
+					<br>
+					<span>所属公司:</span>公交二公司;
+					
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="box-map">地图</div>
+
+	<div class="box-food">美食</div>
+
+	<div class="box-spot">景点</div>
+
+	<div class="box-special">特产</div>
+
+	<div class="box-rent">招租</div>
+
+	<div class="box-app">APP下载</div>
+
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/index-city.js"></script>
+</body>
+</html>
